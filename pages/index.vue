@@ -138,16 +138,16 @@ const services = [
         features: ["Audits de sécurité", "Plans de sécurité", "Formation du personnel"]
     },
     {
-        title: "Sécurité Incendie",
-        description: "Prévention et intervention rapide en cas d'incendie",
-        icon: "fas fa-fire-extinguisher",
-        features: ["Systèmes de détection", "Équipements anti-incendie", "Formation aux procédures"]
+        title: "Transport de Valeurs",
+        description: "Vos biens précieux acheminés en toute sécurité",
+        icon: "fas fa-truck",
+        features: ["Convoyage sécurisé de fonds", "Flotte de véhicules blindés", "Protection optimale"]
     },
     {
-        title: "Cybersécurité",
-        description: "Protection de vos actifs numériques contre les menaces en ligne",
-        icon: "fas fa-shield-alt",
-        features: ["Pare-feu avancés", "Détection d'intrusion", "Sécurisation des données"]
+        title: "Formations",
+        description: "Renforcez les compétences de votre équipe pour un environnement sûr",
+        icon: "fas fa-chalkboard-teacher",
+        features: ["Formation en sûreté", "Sauvetage et Secourisme du Travail (SST)", "Prévention incendie"]
     }
 ]
 
