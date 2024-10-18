@@ -1,0 +1,239 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{pifont}
+\usepackage{listings}
+
+% Définition des couleurs PROSEN
+\definecolor{prosenblue}{RGB}{0, 48, 87}
+\definecolor{prosengreen}{RGB}{34, 139, 34}
+
+% Configuration de la géométrie
+\geometry{
+    top=2cm,
+    bottom=2cm,
+    left=2cm,
+    right=2cm
+}
+
+% Style des pages
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[L]{\textcolor{prosenblue}{PROSEN}}
+\fancyhead[R]{\textcolor{prosenblue}{Guide Technique du Logo}
+\fancyfoot[C]{\thepage}
+
+% Configuration des boîtes colorées
+\tcbset{
+    enhanced,
+    colback=prosenblue!10,
+    colframe=prosenblue,
+    boxrule=0.5pt,
+    fonttitle=\bfseries
+}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\huge\bfseries\textcolor{prosenblue}{GUIDE TECHNIQUE\\[0.5cm] DU LOGO PROSEN}\par}
+\vspace{2cm}
+
+% Insérer le logo ici
+\includegraphics[width=0.6\textwidth]{logo-prosen}
+
+\vspace{2cm}
+{\Large\textcolor{prosenblue}{Version 1.0 - 2024}\par}
+\vspace{2cm}
+
+{\large\textcolor{prosenblue}{DOCUMENT TECHNIQUE DE RÉFÉRENCE}\par}
+\vfill
+
+% Informations de contact
+\begin{tcolorbox}[title=Contact]
+\begin{center}
+\faPhone\ +221 78 964 94 90 \\
+\faEnvelope\ contact@prosen.sn \\
+\faMapMarker\ Villa n°2563, Dieuppeul 2\\
+\faGlobe\ www.prosen.sn
+\end{center}
+\end{tcolorbox}
+
+\end{titlepage}
+
+\chapter{Spécifications Techniques du Logo}
+
+\section{Anatomie du Logo}
+
+\begin{tcolorbox}[title=Éléments Constitutifs]
+\begin{tikzpicture}[remember picture, overlay]
+    % Insérer le logo au centre
+    \node[anchor=center] at (5,5) {\includegraphics[width=8cm]{logo-prosen}};
+    
+    % Flèches et annotations
+    \draw[->,thick] (0,8) -- (2,6) node[left] {Écusson protecteur};
+    \draw[->,thick] (10,8) -- (8,6) node[right] {Police principale};
+    \draw[->,thick] (0,2) -- (2,4) node[left] {Baseline};
+    \draw[->,thick] (10,2) -- (8,4) node[right] {Étoile symbolique};
+\end{tikzpicture}
+\end{tcolorbox}
+
+\section{Spécifications Chromatiques}
+
+\begin{tcolorbox}[title=Palette de Couleurs]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Élément} & \textbf{CMJN} & \textbf{RVB} & \textbf{Pantone} & \textbf{HEX} \\
+\hline
+Bleu PROSEN & 100,45,0,66 & 0,48,87 & 281 C & \#003057 \\
+\hline
+Vert PROSEN & 75,0,75,45 & 34,139,34 & 348 C & \#228B22 \\
+\hline
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\section{Proportions et Construction}
+
+\begin{tcolorbox}[title=Grille de Construction]
+\begin{tikzpicture}[remember picture, overlay]
+    % Grille de construction avec mesures
+    \draw[step=0.5cm,gray,very thin] (0,0) grid (10,10);
+    \node at (5,5) {\includegraphics[width=8cm]{logo-prosen}};
+    
+    % Cotations
+    \draw[<->,red] (0,10) -- (10,10) node[midway,above] {100\%};
+    \draw[<->,red] (0,0) -- (0,10) node[midway,left] {100\%};
+\end{tikzpicture}
+\end{tcolorbox}
+
+\section{Zone de Protection}
+
+\begin{tcolorbox}[title=Espace de Sécurité]
+\begin{tikzpicture}
+    % Zone de protection avec mesures
+    \draw[dashed] (0,0) rectangle (10,10);
+    \node at (5,5) {\includegraphics[width=6cm]{logo-prosen}};
+    
+    % Marges de sécurité
+    \draw[<->,blue] (1,9) -- (2,9) node[midway,above] {X};
+    \draw[<->,blue] (9,1) -- (9,2) node[midway,right] {X};
+\end{tikzpicture}
+\end{tcolorbox}
+
+\chapter{Applications et Usages}
+
+\section{Versions Autorisées}
+
+\begin{tcolorbox}[title=Déclinaisons Officielles]
+\begin{center}
+\begin{tabular}{ccc}
+Version principale & Version monochrome & Version négative \\
+\includegraphics[width=3cm]{logo-prosen} & 
+\includegraphics[width=3cm]{logo-prosen-mono} & 
+\includegraphics[width=3cm]{logo-prosen-neg}
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\section{Applications Interdites}
+
+\begin{tcolorbox}[title=Usages Prohibés]
+\begin{itemize}[label=\ding{55}]
+    \item Ne pas déformer le logo
+    \item Ne pas modifier les couleurs
+    \item Ne pas réorganiser les éléments
+    \item Ne pas ajouter d'effets
+    \item Ne pas utiliser sur des fonds complexes
+\end{itemize}
+\end{tcolorbox}
+
+\section{Tailles Minimales}
+
+\begin{tcolorbox}[title=Dimensions Minimales]
+\begin{center}
+\begin{tabular}{cc}
+\textbf{Print} & \textbf{Digital} \\
+25mm & 100px \\
+\includegraphics[width=25mm]{logo-prosen} & 
+\includegraphics[width=100px]{logo-prosen}
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\chapter{Supports d'Application}
+
+\section{Papeterie}
+
+\begin{tcolorbox}[title=Applications Bureautiques]
+\begin{itemize}[label=\ding{52}]
+    \item Carte de visite : Logo centré
+    \item En-tête de lettre : Logo en haut à gauche
+    \item Enveloppe : Logo en haut à gauche
+    \item Signature email : Version simplifiée
+\end{itemize}
+\end{tcolorbox}
+
+\section{Signalétique}
+
+\begin{tcolorbox}[title=Applications Extérieures]
+\begin{itemize}[label=\ding{52}]
+    \item Enseignes : Version principale
+    \item Véhicules : Version simplifiée
+    \item Uniformes : Version monochrome
+    \item Badges : Version réduite
+\end{itemize}
+\end{tcolorbox}
+
+\section{Digital}
+
+\begin{tcolorbox}[title=Applications Numériques]
+\begin{itemize}[label=\ding{52}]
+    \item Site web : Version principale
+    \item Réseaux sociaux : Version adaptée
+    \item Applications : Version simplifiée
+    \item Présentations : Version haute résolution
+\end{itemize}
+\end{tcolorbox}
+
+\chapter{Fichiers Sources}
+
+\section{Formats Disponibles}
+
+\begin{tcolorbox}[title=Ressources Graphiques]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Format} & \textbf{Usage} & \textbf{Résolution} \\
+\hline
+.ai & Edition & Vectoriel \\
+.eps & Impression & Vectoriel \\
+.svg & Web & Vectoriel \\
+.png & Digital & 300 dpi \\
+.jpg & Web & 72 dpi \\
+\hline
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\section{Nomenclature des Fichiers}
+
+\begin{tcolorbox}[title=Convention de Nommage]
+\texttt{PROSEN\_[VERSION]\_[USAGE]\_[FORMAT]}
+
+Exemple : \texttt{PROSEN\_PRINCIPAL\_WEB\_PNG}
+\end{tcolorbox}
+
+\end{document}
