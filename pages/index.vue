@@ -114,14 +114,16 @@
         <section class="py-20 px-4 bg-gray-800">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-4xl font-bold mb-12 text-center">Nos Valeurs</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <ValueCard 
-                        v-for="value in values" 
-                        :key="value.title"
-                        :title="value.title"
-                        :icon="value.icon"
-                        :description="value.description"
-                    />
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div v-for="value in values" 
+                         :key="value.title" 
+                         class="p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all transform hover:-translate-y-1">
+                        <div class="flex flex-col items-center sm:items-start">
+                            <i :class="[value.icon, 'text-4xl text-green-500 mb-4']"></i>
+                            <h3 class="text-xl font-semibold mb-3 text-center sm:text-left">{{ value.title }}</h3>
+                            <p class="text-gray-300 text-center sm:text-left">{{ value.description }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
